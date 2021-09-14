@@ -1,0 +1,11 @@
+[
+  {
+    "id": "chbb",
+    "routesVariants": [
+      "add-headers:enabled",
+      "register-a-sale:success",
+      "retrieve-voucher-detail:success",
+      "retrieve-product-list:success"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "author": "GJXMSTR",
+  "name": "chbb-rest-nodejs-sdk",
+  "description": "Node SDK for CHBB REST v1 APIs",
+  "version": "1.0.6",
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjxmstr/chbb-rest-nodejs-sdk.git"
+  },
+  "devDependencies": {
+    "@mocks-server/main": "^2.4.0"
+  },
+  "scripts": {
+    "mocks": "mocks-server"
+  }
+}
