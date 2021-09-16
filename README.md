@@ -18,7 +18,7 @@ Create your NodeJS project , Create a folder and open it using Visual Studio Cod
 
 Create index.js file inside the project folder
 ``` text
-    add new file and name it as 'index.js'
+   add new file and name it as 'index.js'
 ````
 
 Install chbb-rest-nodejs-sdk using npm
