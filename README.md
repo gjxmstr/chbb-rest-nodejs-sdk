@@ -28,6 +28,12 @@ Install Mock Server in your project for testing the API
 ```bash
     npm i @mocks-server/main --save-dev
 ```
+Run command inside Terminal
+
+```bash
+    npm run mocks
+```
+
 Changed mock.config.js options based field
 
 ```bash
