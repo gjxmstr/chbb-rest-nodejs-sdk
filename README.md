@@ -324,16 +324,18 @@ Clone first this SDK project repository and use this to publish
     https://github.com/gjxmstr/chbb-rest-nodejs-sdk.git
 ```
 
-Login your NPM account (I'm using my account as of the moment)
+Open the project then open the terminal. 
+After that, Login your NPM account (I'm using my account as of the moment)
 ```bash
   npm login
 ```
 
-Update version inside package.json
+Update version inside package.json (to newer version)
 ```text
     example
     "version": "1.0.5", to "version": "1.0.6",
 ```
+
 Publish the package
 ```bash
     npm publish
