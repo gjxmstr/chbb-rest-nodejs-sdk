@@ -3,21 +3,25 @@
 
 To simplify API integration, CHBB provides NODEJS rest sdk that developer can use to hasten the integration development.
 
-This SDK is for POC purposes only. Its main goal is to see if a SDK can be implemented using NodeJS for CHBB Rest API's.
+This SDK is for POC purposes only. The main goal of this is to see if a SDK can be implemented using NodeJS for CHBB Rest API's.
     
 ## Installation
+Your system should have NodeJs installed. You can install using the link below.
+``` text
+    https://nodejs.org/en/download/
+```
 
-Create your NodeJS project
+Create your NodeJS project , Create a folder and open it using Visual Studio Code, Open Terminal and run the command
 ```bash
   npm init
 ```
 
-Create index.js file inside the src
+Create index.js file inside the project folder
 ``` text
-    index.js
+    add new file and name it as 'index.js'
 ````
 
-Install chbb-rest-nodejs-sdk with npm
+Install chbb-rest-nodejs-sdk using npm
 
 ```bash
   npm install chbb-rest-nodejs-sdk
@@ -28,13 +32,14 @@ Install Mock Server in your project for testing the API
 ```bash
     npm i @mocks-server/main --save-dev
 ```
-Run command inside Terminal
+
+Inside the terminal, Run this command to generate the required files and folders, after running close the terminal first.
 
 ```bash
     npm run mocks
 ```
 
-Changed mock.config.js options based field to mock: "chbb"
+Open mock.config.js and changed mock.config.js options based field to mock: "chbb"
 
 ```bash
     module.exports = {
@@ -45,7 +50,7 @@ Changed mock.config.js options based field to mock: "chbb"
     .....
 ```
 
-Inside mocks folder replace mocks.json'sdata using info below:
+Inside mocks folder replace mocks.json's data using info below:
 
 ```bash
 [
@@ -219,7 +224,6 @@ module.exports = [
     ],
   },
 ];
-
 ```
 
 
@@ -250,10 +254,10 @@ chbb.generateToken({}, (error, tokenString) => {
   if (error) {
     throw error;
   } else {
-    console.log("***************************");
-    console.log("Generated Token");
+    console.log("\n***************************");
+    console.log("Generated Token\n");
     console.log(tokenString);
-    console.log("***************************");
+    console.log("\n***************************\n");
   }
 });
 ```
@@ -267,7 +271,7 @@ chbb.discovery.retrieveProductList({}, (error, receivedData) => {
     console.log("***************************");
     console.log("Retrieve Product List Response");
     console.log(receivedData);
-    console.log("***************************");
+    console.log("***************************\n");
   }
 });
 ```
@@ -281,7 +285,7 @@ chbb.sale.registerSale({}, {}, (error, receivedData) => {
     console.log("***************************");
     console.log("Registered Sale Response");
     console.log(receivedData);
-    console.log("***************************");
+    console.log("***************************\n");
   }
 });
 ```
@@ -295,28 +299,32 @@ chbb.vas.retrieveVoucherDetail({}, (error, receivedData) => {
     console.log("***************************");
     console.log("Retrieve Voucher Detail Response");
     console.log(receivedData);
-    console.log("***************************");
+    console.log("***************************\n");
   }
 });
 ```
-Run your Mock server first
+
+Run your Mock server first, don't close this terminal
 ```bash
 npm run mocks
 ```
 
-Run your NodeJS project
+Open a new terminal and Run your NodeJS project
 ```bash
 npm index.js
 ```
 
+## Generate / Publish SDK to https://www.npmjs.com/ 
+```text
+(Note: We can sign-up on their membership program so that we can publish the SDK as private)
+```
 
+Clone first this SDK project repository and use this to publish
+```text
+    https://github.com/gjxmstr/chbb-rest-nodejs-sdk.git
+```
 
-
-  
-## Generate / Publish SDK to https://www.npmjs.com/
-
-Login your NPM account
-
+Login your NPM account (I'm using my account as of the moment)
 ```bash
   npm login
 ```
