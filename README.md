@@ -34,7 +34,7 @@ Run command inside Terminal
     npm run mocks
 ```
 
-Changed mock.config.js options based field
+Changed mock.config.js options based field to mock: "chbb"
 
 ```bash
     module.exports = {
