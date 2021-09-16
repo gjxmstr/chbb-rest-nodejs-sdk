@@ -12,6 +12,11 @@ Create your NodeJS project
   npm init
 ```
 
+Create index.js file inside the src
+``` text
+    index.js
+````
+
 Install chbb-rest-nodejs-sdk with npm
 
 ```bash
