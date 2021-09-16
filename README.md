@@ -233,6 +233,20 @@ chbb.configure({
 });
 ```
 
+Generate Token
+```javascript
+chbb.generateToken({}, (error, tokenString) => {
+  if (error) {
+    throw error;
+  } else {
+    console.log("***************************");
+    console.log("Generated Token");
+    console.log(tokenString);
+    console.log("***************************");
+  }
+});
+```
+
 Discovery - Retrieve Product List
 ```javascript
 chbb.discovery.retrieveProductList({}, (error, receivedData) => {
