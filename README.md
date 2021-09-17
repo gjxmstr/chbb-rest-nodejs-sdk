@@ -34,10 +34,29 @@ Install Mock Server in your project for testing the API
 ```
 
 Add the mock script inside package.json
-```text
+```javascript
     "scripts": {
     "mocks": "mocks-server"
   }
+```
+
+package.json
+```javascript
+    ...
+    ...
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/gjxmstr/chbb-rest-nodejs-sdk.git"
+  },
+  "devDependencies": {
+    "@mocks-server/main": "^2.4.0"
+  },
+  "scripts": {
+    "mocks": "mocks-server"
+  }
+}
+    
+    
 ```
 
 Inside the terminal, Run this command to generate the required files and folders, after running close the terminal first.
