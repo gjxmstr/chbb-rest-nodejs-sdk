@@ -33,6 +33,13 @@ Install Mock Server in your project for testing the API
     npm i @mocks-server/main --save-dev
 ```
 
+Add the mock script inside package.json
+```text
+    "scripts": {
+    "mocks": "mocks-server"
+  }
+```
+
 Inside the terminal, Run this command to generate the required files and folders, after running close the terminal first.
 
 ```bash
